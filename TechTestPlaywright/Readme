@@ -1,1 +1,38 @@
+Solution
+ 
+1. Created a maven project
+2. Add package with required class
+3. Class includes two methods:
+- Method for API test to register a new user
+- Method for Login and category creation
+3. Use TestNG annotations to run tests
+4. Use postman to send request and validate results and implement it in code 
 
+Note: Additional comments in code
+
+Prerequisites
+
+Browsers: Chrome, Firefox, Chromium
+Required Software: 
+- You need to have installed Java(JDK) and Maven with the respective environemnt variables added
+- TestNG installed
+- Dependencies in POM.xml file for: Playwright, TestNG, Playwright, jackson databind
+
+Run tests
+
+1. Create a new workspace path
+2. Add project folder in the workspace path
+3. Open Eclipse >> Select required workspace
+4. Go to TechTestPlaywright\src\test\java\exercise2 package and open class QubikaSportsClub(Double Click)
+5. Run Test, we have to options for that:
+- Run tests individualy by clicking on "Run" above each Test
+- Run test together by clicking on "Run All" above class
+
+Approach
+
+For this implementation we are using one class hoever we could use Page Object model pattern if we want to improve the order and functionality.
+
+We could stablish:
+Base Page: Isolate the test framework from any change that Selenium API suffers
+Object Pages: Locators and  methods of a page 
+Test Clases(TestNG or JUnit): These will call the methods in the object pages
